@@ -8,11 +8,22 @@ const avto = {
     averageSpeed: 120,
     unitOfMeasure: "km/h",
     showAvto: function () {
-        console.log()
-    }
-}
+        console.log(avto)
+    },
 
-console.log(avto)
+};
+
+const wayToOvercome = parseInt(prompt("How long is your way"));
+
+function calcTimePerWay(way) {
+    return wayToOvercome / avto.averageSpeed;
+};
+
+console.log(calcTimePerWay(way))
+
+
+
+
 
 
 
